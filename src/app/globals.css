@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f1f5f9;
+}
+
+body {
+  background: var(--bg);
+  color: #0f172a;
+}
+
+/* Print: sembunyikan UI, hanya tampilkan area cetak */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    box-shadow: none !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}
